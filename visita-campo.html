@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Visita a Campo</title>
+    
+    <style>
+        /* Estilos generales y fondo negro */
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #000000; 
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el logo */
+        .logo-container { 
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 0; 
+            border: none; 
+            background-color: transparent; 
+        }
+        .logo { 
+            max-width: 150px;
+            height: auto;
+            display: block; 
+            border: none; 
+            outline: none; 
+            padding: 0; 
+            margin: 0 auto; /* Centrar logo */
+            background-color: transparent; 
+            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.4)); 
+        }
+
+
+        /* Contenedor principal */
+        .contenedor-formulario-google {
+            background-color: #1f1f1f; /* Fondo gris oscuro */
+            padding: 15px; 
+            border-radius: 6px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+            width: 640px; 
+            max-width: 95%;
+            margin-bottom: 20px;
+        }
+
+        h2 { 
+            text-align: center; 
+            color: #20B2AA; /* Un color teal/turquesa para "Visita Campo" */
+            margin-bottom: 20px; 
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        /* Ajuste del iframe: Usamos una altura fija muy generosa para asegurar que todo el formulario sea visible */
+        .contenedor-formulario-google iframe {
+            display: block;
+            width: 100%; 
+            border: none;
+            height: 2300px; /* Ajustada a la altura que proporcionaste para este form */
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            border-radius: 6px;
+        }
+
+        /* Estilos para el botón de regreso */
+        .boton-regreso {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #1877f2; /* Color de acento: Azul (se mantiene para el botón de regreso) */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .boton-regreso:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <!-- Puedes reemplazar esta URL con la ruta a tu propio logo. -->
+        <img src="tmt.png" 
+             alt="Logo de tu empresa" class="logo">
+    </div>
+
+    <div class="contenedor-formulario-google">
+        <h2>📖 Registro de Visita a Campo</h2>
+        
+        <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSddRfGUdXWSyiAmKTyuilh_Ybkt72VLltKZDxZHIa7l1Pm8jA/viewform?embedded=true" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                    Cargando Formulario…
+        </iframe>
+    </div>
+
+    <a href="index.html" class="boton-regreso">
+        ← Regresar al Menú Principal
+    </a>
+
+</body>
+</html>

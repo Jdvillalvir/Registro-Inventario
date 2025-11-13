@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ventas Perdidas</title>
+    
+    <style>
+        /* Estilos generales y fondo negro */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; 
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el logo */
+        .logo-container { 
+            margin-bottom: 40px; 
+            padding: 0;
+            margin: 2;
+            line-height: 0; 
+            /* Para que el contenedor no tenga ningún espacio que genere el "borde" */
+            border: none; 
+            background-color: transparent; 
+        }
+        .logo { 
+            max-width: 200px; 
+            height: auto;
+            display: block; 
+            /* ESTAS SON LAS PROPIEDADES CRÍTICAS PARA ELIMINAR EL BORDE */
+            border: none; /* Asegura que no haya borde CSS */
+            outline: none; /* Elimina cualquier contorno de enfoque */
+            padding: 0; /* Elimina cualquier espacio interno */
+            margin: 0; /* Elimina cualquier espacio externo */
+            background-color: transparent; /* Asegura un fondo transparente */
+            
+            /* Esto es lo que da el efecto de "mezclado" o "halo" */
+            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.4)); /* Sombra blanca sutil */
+        }
+
+
+        /* Contenedor que enmarca el formulario de Google */
+        .contenedor-formulario-google {
+            background-color: #222222; /* Fondo gris oscuro */
+            padding: 15px; 
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            width: 500px; 
+            max-width: 95%;
+        }
+
+        h2 { 
+            text-align: center; 
+            color: #eeeeee; 
+            margin-bottom: 20px; 
+        }
+        
+        /* Ajuste para que el iframe ocupe todo el ancho del contenedor */
+        .contenedor-formulario-google iframe {
+            display: block;
+            width: 100%; /* Hacemos que ocupe todo el ancho del contenedor */
+            border: none;
+            height: 400px; /* Altura predeterminada, puedes ajustarla */
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            border-radius: 8px;
+        }
+
+        /* Estilos para el botón de regreso */
+        .boton-regreso {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #007bff; 
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .boton-regreso:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="tmt.png" 
+             alt="Logo de tu empresa" class="logo">
+    </div>
+
+    <div class="contenedor-formulario-google">
+        <h2>📋 Registro de Ventas Perdidas</h2>
+        
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf3UjopXwZDNJqomWO3WR-f8bRmJaI2JDJOP8TC6xoXWY-2Dw/viewform?embedded=true" 
+            width="100%" 
+            height="400" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+                Cargando Formulario…
+        </iframe>
+        
+    </div>
+
+    <a href="index.html" class="boton-regreso">
+        ← Regresar al Menú Principal
+    </a>
+
+</body>
+</html>
