@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal de Gestión</title>
+    
+    <style>
+        /* Estilos generales y fondo negro */
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #000000; /* Fondo negro puro */
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el logo */
+        .logo-container { 
+            margin-bottom: 40px; 
+            line-height: 0; 
+            border: none; 
+            background-color: transparent; 
+        }
+
+             .signature {
+            position: fixed;
+            bottom: 15px;
+            right: 20px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            text-align: right;
+        }
+
+        .logo { 
+            max-width: 200px; 
+            height: auto;
+            display: block; 
+            border: none; 
+            outline: none; 
+            padding: 0; 
+            margin: 0 auto; /* CORRECCIÓN: Centrar la imagen horizontalmente */
+            background-color: transparent; 
+            /* Sombra blanca sutil, como un halo */
+            filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.4)); 
+        }
+
+        /* Contenedor principal del menú - Ajustado a un gris oscuro como en la imagen */
+        .menu-contenedor {
+            background-color: #1f1f1f; /* Gris muy oscuro, similar al de la imagen */
+            padding: 40px;
+            border-radius: 6px; /* Bordes menos redondeados */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+            width: 400px;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #eeeeee;
+            margin-bottom: 30px;
+            font-size: 1.6em; /* Un poco más pequeño */
+            font-weight: 600; /* Menos peso */
+        }
+
+        /* Estilos de los botones grandes de navegación base */
+        .boton-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+            margin-bottom: 20px;
+            border-radius: 4px; /* Bordes muy cuadrados */
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            gap: 10px;
+            box-shadow: none; /* Quitamos la sombra para un estilo más plano */
+        }
+
+        /* Hover general para todos los botones */
+        .boton-menu:hover {
+            transform: scale(1.02); /* Efecto de escala sutil */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+        /* --- Estilos Específicos por Botón (Ajustados a los colores de la imagen) --- */
+
+        /* Venta Perdida (Rojo vibrante) */
+        .boton-perdida {
+            background-color: #e54c5c; /* Rojo brillante de la imagen */
+        }
+        .boton-perdida:hover {
+            background-color: #d83d4e;
+        }
+
+        /* Seguimiento (Azul vibrante) */
+        .boton-seguimiento {
+            background-color: #1877f2; /* Azul vibrante de la imagen */
+        }
+        .boton-seguimiento:hover {
+            background-color: #1562c9;
+        }
+
+        /* Visita Campo (Teal/Cyan) - Mantenido, pero con el nuevo estilo plano */
+        .boton-campo {
+            background-color: #17a2b8; /* Teal */
+        }
+        .boton-campo:hover {
+            background-color: #138496;
+        }
+
+        /* Estilo para Responsividad */
+        @media (max-width: 600px) {
+            .menu-contenedor {
+                padding: 30px 20px;
+                width: 100%;
+            }
+            .boton-menu {
+                font-size: 1.1em;
+                padding: 18px 15px;
+            }
+                        .signature {
+                font-size: 0.75rem;
+                right: 20px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <!-- Placeholder para el logo -->
+        <img src="tmt.png" 
+             alt="Logo de tu empresa" class="logo">
+    </div>
+
+    <div class="menu-contenedor">
+        <h1>Selecciona una Opción</h1>
+        
+        <a href="ventas-perdidas.html" class="boton-menu boton-perdida">
+            🛑 Venta Perdida
+        </a>
+
+        <a href="seguimiento-ventas.html" class="boton-menu boton-seguimiento">
+            📊 Seguimiento Ventas
+        </a>
+        
+        <!-- Botón de Visita Campo (Mantenido) -->
+        <a href="visita-campo.html" class="boton-menu boton-campo">
+            🗺️ Visita Campo
+        </a>
+    </div>
+
+    <div class="signature">
+        by Josue Villalvir
+    </div>
+</body>
+</html>
